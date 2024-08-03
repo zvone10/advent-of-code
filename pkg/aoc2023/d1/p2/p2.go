@@ -1,12 +1,16 @@
 package aoc2023d1p2
 
 import (
-	"fmt"
 	"os"
 	"sort"
 	"strings"
 	"unicode"
+
+	"github.com/zvone10/advent-of-code/internal"
 )
+
+const DAY = 1
+const PART = 2
 
 func Run() {
 	numbers := []string{
@@ -61,7 +65,7 @@ func Run() {
 
 	}
 
-	fmt.Println(sum)
+	internal.PrintResult(DAY, PART, sum)
 }
 
 type number struct {

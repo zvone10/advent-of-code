@@ -1,11 +1,15 @@
 package aoc2023d1p1
 
 import (
-	"fmt"
 	"os"
 	"strings"
 	"unicode"
+
+	"github.com/zvone10/advent-of-code/internal"
 )
+
+const DAY = 1
+const PART = 1
 
 func Run() {
 	data, err := os.ReadFile("./inputs/2023/d1.txt")
@@ -34,5 +38,5 @@ func Run() {
 		sum += number
 	}
 
-	fmt.Println(sum)
+	internal.PrintResult(DAY, PART, sum)
 }
