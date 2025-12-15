@@ -1,4 +1,4 @@
-package d17p2
+package aoc2023d17p2
 
 import (
 	"fmt"
@@ -28,8 +28,8 @@ type direction struct {
 
 var directions []direction
 
-func Run2() {
-	data, err := os.ReadFile("./inputs/d17.txt")
+func Run() {
+	data, err := os.ReadFile("./inputs/2023/d17.txt")
 	if err != nil {
 		panic(err)
 	}

@@ -1,4 +1,4 @@
-package d17p1
+package aoc2023d17p1
 
 import (
 	"fmt"
@@ -6,6 +6,8 @@ import (
 	"os"
 	"strconv"
 	"strings"
+
+	"github.com/zvone10/advent-of-code/internal"
 )
 
 type node struct {
@@ -28,8 +30,10 @@ type direction struct {
 
 var directions []direction
 
+const DAY, PART = 17, 1
+
 func Run() {
-	data, err := os.ReadFile("./inputs/d17.txt")
+	data, err := os.ReadFile("./inputs/2023/d17.txt")
 	if err != nil {
 		panic(err)
 	}
@@ -131,7 +135,7 @@ func Run() {
 			}
 		}
 	}
-	fmt.Println(minimum)
+	internal.PrintResult(DAY, PART, minimum)
 }
 
 func findMinQueue() (int, node) {

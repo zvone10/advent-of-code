@@ -7,6 +7,8 @@ import (
 	"github.com/zvone10/advent-of-code/internal"
 	aoc2023d1p1 "github.com/zvone10/advent-of-code/pkg/aoc2023/d1/p1"
 	aoc2023d1p2 "github.com/zvone10/advent-of-code/pkg/aoc2023/d1/p2"
+	aoc2023d17p1 "github.com/zvone10/advent-of-code/pkg/aoc2023/d17/p1"
+	aoc2023d17p2 "github.com/zvone10/advent-of-code/pkg/aoc2023/d17/p2"
 	aoc2023d18p1 "github.com/zvone10/advent-of-code/pkg/aoc2023/d18/p1"
 	aoc2023d18p2 "github.com/zvone10/advent-of-code/pkg/aoc2023/d18/p2"
 	aoc2023d19p1 "github.com/zvone10/advent-of-code/pkg/aoc2023/d19/p1"
@@ -23,6 +25,8 @@ import (
 	aoc2023d23p2 "github.com/zvone10/advent-of-code/pkg/aoc2023/d23/p2"
 	aoc2023d24p1 "github.com/zvone10/advent-of-code/pkg/aoc2023/d24/p1"
 	aoc2023d24p2 "github.com/zvone10/advent-of-code/pkg/aoc2023/d24/p2"
+	aoc2023d3p1 "github.com/zvone10/advent-of-code/pkg/aoc2023/d3/p1"
+	aoc2023d3p2 "github.com/zvone10/advent-of-code/pkg/aoc2023/d3/p2"
 )
 
 var day = flag.Int("d", 0, "Day that should be executed")
@@ -36,7 +40,9 @@ func main() {
 	case 2:
 		internal.NewDayRunner(aoc2023d2p1.Run, aoc2023d2p2.Run).Execute()
 	case 3:
-		fmt.Println("empty")
+		internal.NewDayRunner(aoc2023d3p1.Run, aoc2023d3p2.Run).Execute()
+	case 17:
+		internal.NewDayRunner(aoc2023d17p1.Run, aoc2023d17p2.Run).Execute()
 	case 18:
 		internal.NewDayRunner(aoc2023d18p1.Run, aoc2023d18p2.Run).Execute()
 	case 19:

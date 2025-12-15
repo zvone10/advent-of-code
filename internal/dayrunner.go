@@ -17,7 +17,7 @@ type SequentialDayRunner struct {
 	f2    Function
 }
 
-func NewDayRunner(f1, f2 Function) *SequentialDayRunner {
+func NewDayRunner(f1, f2 Function) DayRunner {
 	return &SequentialDayRunner{
 		start: time.Now(),
 		f1:    f1,
